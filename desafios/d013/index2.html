@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 02</title>
+    <style>
+        body {
+            background-color: rgb(194, 210, 177);
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 400px;
+            text-align: center;
+        }
+
+        td > img {
+            width: 40px;
+        }
+
+        th {
+            background-color: rgba(127, 255, 212, 0.371);
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        td {
+            border: 2px solid black;
+            padding: 10px;
+            background-color: rgb(231, 164, 216);
+        }
+
+        td.numb {
+            background-color: rgb(129, 152, 230);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="5" class="numb">Tabela 02</th>
+            </tr>      
+        </thead>
+
+        <tbody>
+            <tr>
+                <td colspan="4" class="numb">A</td>
+                <td rowspan="4" class="numb">B</td>
+            </tr>
+            <tr>
+                <td rowspan="4" class="numb">C</td>
+                <td><img src="logo-github.jpg" alt=""></td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>K</td>
+                <td>L</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="numb">M</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th colspan="5">Fim da Tabela</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
