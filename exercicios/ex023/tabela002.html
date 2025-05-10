@@ -14,11 +14,17 @@
             width: 300px;
             border: 2px solid black;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
             border: 1px solid black;
             padding: 10px;
+        }
+
+        /*Efeito Zebrado, fácil de ler*/
+        tbody > tr:nth-child(2n) {
+            background-color: aquamarine;
         }
 
         td.num {
@@ -28,6 +34,18 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px; background-color: gray;
+        }
+
+        caption {
+            font-size: 1em;
+            border: 2px solid black;
+            background: darkgray;
+            padding: 10px;
         }
     </style>
 </head>
@@ -44,10 +62,11 @@
             TR , TD, TH
         -->
     <table>
+        <caption><strong>População das Únidades Federativas</strong></caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
             <tr>
@@ -167,10 +186,25 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>212 583 750</strong></td>
             </tr>
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, delectus. Praesentium labore laudantium dolorum sequi ut a expedita doloremque, iusto, obcaecati tempora eum atque. Porro, dolore. Vitae sed maxime illo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nemo doloribus omnis quos nam doloremque voluptate voluptatum illo mollitia harum reprehenderit amet odit sint minus eligendi corrupti, accusamus atque Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, numquam soluta distinctio cum esse assumenda eligendi excepturi natus. Cum tenetur consectetur doloremque libero atque maxime autem quidem quasi incidunt velit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque voluptates labore cupiditate. Ad, quasi. Tenetur inventore maiores ullam mollitia, officiis iste praesentium dolorum aperiam eos. Perspiciatis repudiandae iste iusto beatae.lorem
+    </p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, delectus. Praesentium labore laudantium dolorum sequi ut a expedita doloremque, iusto, obcaecati tempora eum atque. Porro, dolore. Vitae sed maxime illo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nemo doloribus omnis quos nam doloremque voluptate voluptatum illo mollitia harum reprehenderit amet odit sint minus eligendi corrupti, accusamus atque Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, numquam soluta distinctio cum esse assumenda eligendi excepturi natus. Cum tenetur consectetur doloremque libero atque maxime autem quidem quasi incidunt velit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque voluptates labore cupiditate. Ad, quasi. Tenetur inventore maiores ullam mollitia, officiis iste praesentium dolorum aperiam eos. Perspiciatis repudiandae iste iusto beatae.lorem
+    </p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, delectus. Praesentium labore laudantium dolorum sequi ut a expedita doloremque, iusto, obcaecati tempora eum atque. Porro, dolore. Vitae sed maxime illo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nemo doloribus omnis quos nam doloremque voluptate voluptatum illo mollitia harum reprehenderit amet odit sint minus eligendi corrupti, accusamus atque Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, numquam soluta distinctio cum esse assumenda eligendi excepturi natus. Cum tenetur consectetur doloremque libero atque maxime autem quidem quasi incidunt velit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque voluptates labore cupiditate. Ad, quasi. Tenetur inventore maiores ullam mollitia, officiis iste praesentium dolorum aperiam eos. Perspiciatis repudiandae iste iusto beatae.lorem
+    </p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, delectus. Praesentium labore laudantium dolorum sequi ut a expedita doloremque, iusto, obcaecati tempora eum atque. Porro, dolore. Vitae sed maxime illo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nemo doloribus omnis quos nam doloremque voluptate voluptatum illo mollitia harum reprehenderit amet odit sint minus eligendi corrupti, accusamus atque Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, numquam soluta distinctio cum esse assumenda eligendi excepturi natus. Cum tenetur consectetur doloremque libero atque maxime autem quidem quasi incidunt velit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque voluptates labore cupiditate. Ad, quasi. Tenetur inventore maiores ullam mollitia, officiis iste praesentium dolorum aperiam eos. Perspiciatis repudiandae iste iusto beatae.lorem
+    </p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, delectus. Praesentium labore laudantium dolorum sequi ut a expedita doloremque, iusto, obcaecati tempora eum atque. Porro, dolore. Vitae sed maxime illo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nemo doloribus omnis quos nam doloremque voluptate voluptatum illo mollitia harum reprehenderit amet odit sint minus eligendi corrupti, accusamus atque Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, numquam soluta distinctio cum esse assumenda eligendi excepturi natus. Cum tenetur consectetur doloremque libero atque maxime autem quidem quasi incidunt velit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque voluptates labore cupiditate. Ad, quasi. Tenetur inventore maiores ullam mollitia, officiis iste praesentium dolorum aperiam eos. Perspiciatis repudiandae iste iusto beatae.lorem
+    </p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, delectus. Praesentium labore laudantium dolorum sequi ut a expedita doloremque, iusto, obcaecati tempora eum atque. Porro, dolore. Vitae sed maxime illo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nemo doloribus omnis quos nam doloremque voluptate voluptatum illo mollitia harum reprehenderit amet odit sint minus eligendi corrupti, accusamus atque Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, numquam soluta distinctio cum esse assumenda eligendi excepturi natus. Cum tenetur consectetur doloremque libero atque maxime autem quidem quasi incidunt velit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque voluptates labore cupiditate. Ad, quasi. Tenetur inventore maiores ullam mollitia, officiis iste praesentium dolorum aperiam eos. Perspiciatis repudiandae iste iusto beatae.lorem
+    </p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, delectus. Praesentium labore laudantium dolorum sequi ut a expedita doloremque, iusto, obcaecati tempora eum atque. Porro, dolore. Vitae sed maxime illo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nemo doloribus omnis quos nam doloremque voluptate voluptatum illo mollitia harum reprehenderit amet odit sint minus eligendi corrupti, accusamus atque Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, numquam soluta distinctio cum esse assumenda eligendi excepturi natus. Cum tenetur consectetur doloremque libero atque maxime autem quidem quasi incidunt velit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque voluptates labore cupiditate. Ad, quasi. Tenetur inventore maiores ullam mollitia, officiis iste praesentium dolorum aperiam eos. Perspiciatis repudiandae iste iusto beatae.lorem
+ 
 </body>
 </html>
