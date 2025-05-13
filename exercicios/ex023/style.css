@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 500px;
+    height: 300px;
+    border-collapse: collapse;
+    text-align: center; 
+    background: rgb(209, 189, 142);
+    box-shadow: black;
+}
+
+caption {
+    border: 2px solid black;
+    border-radius: 120px;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+th {
+    background-color: rgba(255, 99, 71, 0.738);
+    font-weight: bold;
+}
+
+th , td {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+td.Filmes {
+    background: pink;
+}
+
+td.mfilmes {
+    background-color: rgba(0, 0, 255, 0.618);
+}
+
+td.feminino {
+    background-color: violet;
+}
+
+td.masculino {
+    background-color: red;
+}
