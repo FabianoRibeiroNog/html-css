@@ -7,6 +7,43 @@
 </head>
 <body>
     <h1>Testes de Formulário</h1>
-    <form action="cadastro.php"></form>
+    <form action="cadastro.php">
+        
+        <fieldset>
+            <legend>SEXO</legend>
+            <label for="isxmas"><input type="radio" name="sexo" id="isxmas"> Masculino</label>
+            <input type="radio" name="sexo" id="isxfem" checked> <label for="isxfem"> Feminino</label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <label for="iesfut"><input type="checkbox" name="esfut" id="iesfut" checked> Futebol <br> <hr></label>
+            <label for="iesten"><input type="checkbox" name="esten" id="iesten"> Tênis</label> <br> <hr>
+            <label for="iesbas"><input type="checkbox" name="esbas" id="iesbas"> Basket</label> <br> <hr>
+            <label for="iesgol"><input type="checkbox" name="esgol" id="iesgol"> Golf <br> <hr></label>           
+            <label for="iesnat"><input type="checkbox" name="esnat" id="iesnat"> Natação</label> <br> <hr>
+
+        </fieldset>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <h1>Teste fora do form</h1>
+    <fieldset>
+        <legend>TESTANDO O FIELDSET SEM O FORM</legend>
+        <p> Embora
+            ele funcione normal,<br>
+            o mais correto é usa-lo<br>
+            dentro do form <br>
+            hhhh
+            hhhh
+            hhhh
+            hhhh
+        </p>
+    </fieldset>
 </body>
 </html>
