@@ -4,6 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testando comandos pelo Gemini</title>
+    <style>
+        .container {
+            display: grid;
+            background-color: lightgray;
+            border: 2px solid black;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+        }
+
+        .caixa1 {
+            background-color: red;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 6;
+        }
+
+        .caixa2 {
+            background-color: purple;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 6;
+        }
+
+        .caixa3 {
+            background-color: yellow;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 6;
+        }
+
+        .caixa4 {
+            background-color: aqua;
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 6;
+        }
+
+        .caixa5 {
+            background-color: blue;
+            grid-column-start: 5;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 6;
+        }
+    </style>
 </head>
 <body>
     <form action="#"></form>
@@ -16,6 +65,21 @@
         <label for="asasasa"></label>
         <fieldset>asasas</fieldset>
     </select>
+
+<hr>
+<hr>
+<hr>
+<hr>
+
+<div class="container">
+    <div class="caixa1">Caixa 1</div>
+    <div class="caixa2">Caixa 2</div>
+    <div class="caixa3">Caixa 3</div>
+    <div class="caixa4">Caixa 4</div>
+    <div class="caixa5">Caixa 5</div>
+    <div class="caixa6">Caixa 3</div>
+    <div class="caixa7">Caixa 4</div>
+    <div class="caixa8">Caixa 5</div>
 </body>
 </html>
 
