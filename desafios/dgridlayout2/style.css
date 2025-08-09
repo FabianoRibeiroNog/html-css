@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    background-color: rgb(149, 173, 194);
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    width: 100%;
+}
+
+.hcontainer {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.htop {
+    background-color: rgb(207, 95, 95);
+    grid-row: 1;
+    grid-column: 1;
+    text-align: center;
+    color: white;
+    padding: 60px;
+}
+
+.menu {
+    background-color: rgb(139, 62, 59);
+    grid-row: 2;
+    grid-column: 1;
+    color: rgb(15, 12, 12);
+    text-align: center;
+    padding: 15px 0;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 10px;
+    white-space: nowrap;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ffd700;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
+.hmain {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 1fr;
+}
+
+#section-one {
+    background-color: rgb(104, 33, 28);
+    color: white;
+    text-align: center;
+    padding-top: 110px;
+}
+
+#section-two {
+    background-color: rgba(161, 45, 45, 0.699);
+    text-align: center;
+    padding-top: 110px;
+}
+
+footer {
+    background-color: rgb(189, 62, 40);
+    text-align: center;
+}

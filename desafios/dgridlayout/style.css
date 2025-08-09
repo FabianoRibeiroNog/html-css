@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.hcontainer {
+    display: grid;
+    background-color: lightcoral;
+    border: 1px dashed black;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.top {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: center;
+    align-self: center;
+}
+
+.menu {
+    justify-self: center;
+    align-self: center;
+}
+
+.mcontainer {
+    display: grid;
+    background-color: lightblue;
+    border: 1px dashed black;
+}
+
+.fcontainer {
+    display: grid;
+    background-color: rgb(39, 190, 140);
+    border: 1px dashed black;
+}
